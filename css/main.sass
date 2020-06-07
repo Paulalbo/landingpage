@@ -1,0 +1,90 @@
+$darkgrey: #323232
+
+
+*
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+    font-family: 'Nunito Sans', sans-serif 
+
+body
+    background-color: none
+@keyframes slide 
+    0%
+        margin-top: -50vh
+    30%
+        margin-top: 20vh
+    100%
+        margin-top: 0vh
+
+header
+    display: flex
+    justify-content: center
+    align-content: center
+    height: 100vh
+    background-image: linear-gradient(to bottom left, $darkgrey , #000)
+
+    & h1 
+        color: white
+        text-align: left
+        font-size: 6em
+        position: absolute
+        z-index: 1
+    
+    & #inserttext
+        animation: slide 2s
+
+    
+    & div
+        background-image: url(../img/header2.png)
+        background-attachment: fixed
+        background-size: cover
+        position: relative
+        height: 100vh
+        width: 100vw
+        z-index: 2
+
+section.text
+    background-color: white
+    height: 100vh
+    
+
+    & h1 
+        color: BLACK
+        text-align: left
+        font-size: 6em
+        behavior: scroll
+        direction: left
+    
+    & p
+        padding: 15% 5%
+        font-size: 2em
+        text-align: left
+
+section.image
+    display: flex
+    justify-content: center
+    align-content: center
+    height: 100vh
+    background-image: linear-gradient(to bottom left, $darkgrey , #000)
+    & h1 
+        color: white
+        text-align: left
+        font-size: 6em
+        z-index: 1
+        behavior: scroll
+        direction: left
+
+
+
+    
+    & div
+        background-image: url(../img/header3.png)
+        background-attachment: fixed
+        background-size: cover
+        position: absolute
+        height: 100vh
+        width: 100vw
+        z-index: 2
+
+        
